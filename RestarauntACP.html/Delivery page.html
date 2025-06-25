@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--ACP , Lesson  98 , Content display in website.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam`s restaurant</title>
+</head>
+<style>
+    *{
+        font-family:Arial, Helvetica, sans-serif
+    }
+        .text{
+        text-align: center;
+        top:1%;
+        color: rgb(0, 54, 102);
+        align-items:center ;
+    }
+    .normaltext{
+        color: rgb(0, 54, 102);
+     }
+</style>
+<body>
+    <h1 class="text">Delivery page</h1>
+    <a href="ACP.html">Back to home page</a>
+    <p class="normaltext">This is the delivery page for sam`s restaurant, please fill the form below to deliver an item to your house. we charge an fee on delivery using the formula: charge = approx distance to your house(from restaurant) x 25</p>
+    <form class="normaltext">
+        <label>Your name</label><br>
+        <input title="name" type="text"><br>
+        <label>Your gmail</label><br>
+        <input title="gmail" type="email"><br>
+        <label>Food you want delivered</label><br>
+        <input title="food`s name" type="text"><br>
+        <label>Pay on delivery?</label><br>
+        <input title="pay on delivery" type="checkbox"><br>
+        <label>Credit card(if not paying on delivery)</label><br>
+        <input title="credit card" type="text"><br>
+        <label>Your Address</label><br>
+        <input title="adress" type="text"><br>
+        <label>approximate distance to your house from restaurant</label><br>
+        <input title="distance" type="text" id="one"><br>
+        <button type="submit"class="normaltext">Submit</button>
+    </form>
+<p class="normaltext">Your order will reach in <b>1 hour</b></p>
+</body>
+</html>
