@@ -1,0 +1,41 @@
+<!--Lesson 69 ACP , "Get familiar with psuedo classes"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam`s favourite books</title>
+</head>
+<style>
+   #one::first-letter{
+    font-size: 170%;
+    font-family: cursive;
+   }
+   a:hover{
+    font-size: 200%;
+    color:cadetblue;
+    text-decoration:underline
+   }
+   a::after{
+    content: " 📚"
+   }
+   a:active{
+    color:burlywood
+   }
+   li:nth-child(2){
+    background-color: yellow;
+   }
+</style>
+<body>
+    <h1> Sam`s favourite books</h1>
+    <p id="one">This website is about my favourite books, all these books have their links mentioned , so you can read them or buy them(in no particular order):</p>
+    <ul>
+      <li><a href="#">Jack and jill rhyme`s</a></li>
+      <li><a href="#">10 picture book storys for kids</a></li>
+      <li><a href="#">rhymes for kids</a></li>
+      <li><a href="#">Dr seuss books</a></li>
+      <li><a href="#">Picture books about indian mythology</a></li>
+      <li><a href="#"> Jack and the beanstalk</a></li>
+    </ul>
+</body>
+</html>
