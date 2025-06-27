@@ -1,0 +1,56 @@
+<!-- ACP , Lesson 67 , "Cascading effect"-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background effects in CSS</title>
+ </head>
+ <style>
+    .bgdisplay{
+        color:brown;
+        background-color:brown;
+    }
+    .backgroundimagedisplay{
+        background-image: url(CSS.jpeg);
+        color:white
+    }
+    .backgroundimagedisplay1{
+        background-image: url(CSS.jpeg);
+        color:white;
+        background-repeat: no-repeat;
+    }
+    h3{
+        font-size: 120%;
+    }
+    #grad1{
+            height: 200px;
+            background-color:teal; 
+            background-image: linear-gradient(to top right , rgb(59, 59, 9), cyan ,rgb(255, 208, 0) , rgb(83, 11, 218) )
+        }
+    #grad2{
+            height: 200px;
+            background-color:teal; 
+            background-image:radial-gradient(red , orange , yellow , blue)
+    }
+ </style>
+ <body>
+    <h1> Background effects in CSS.</h1>
+    <h3> Display of Background color:</h3>
+    <div title="background color display" class="bgdisplay"> 
+        A<br>A<br>A<br>A<br>A 
+    </div>
+    <h3> Display of background image with reptition:</h3>
+    <div class="backgroundimagedisplay">
+<p>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A</p><br>A
+    </div>
+    <h3> Display of background image without repititon:</h3>
+    <div class="backgroundimagedisplay1">
+        <p>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A<br>A</p><br>A 
+     </div>
+    <h3>Display of linear gradient: </h3>
+    <div id="grad1"></div>
+    <h3>Display of radial gradient:</h3>
+    <div id="grad2"></div>
+ </body>
+ </html>
