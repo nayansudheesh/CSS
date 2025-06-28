@@ -1,0 +1,69 @@
+<!-- ACP , Lesson  70 , "Box model properties"-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display of boxmodel properties</title>
+ </head>
+ <style>
+   *{
+      font-family: Arial, Helvetica, sans-serif;
+   }
+   .eg1{
+      background-color:brown;
+      color:rgb(0, 0, 0);
+      border:5px solid;
+      margin:10px;
+      padding:15px;
+
+   }
+   .textofeg1{
+      color:rgb(255, 255, 255)
+   }
+   .eg2{
+      background-color:brown;
+      color:rgb(0, 0, 0);
+      border:none;
+      margin:0px;
+      padding:0px;
+
+   }
+   #float1{
+      float: right;
+   }
+   #two{
+      float:left
+
+   }
+   .floatwrapper{
+      overflow: auto;
+   }
+ </style>
+ <body>
+    <h1> Box model properties</h1>
+    <p> This website is an display and explanation of certain major features of the 'Box model'</p>
+    <h3>What is the box model?</h3>
+    <p>The box model is a model which represents the areas in which CSS style is applied to. it can be seen below:</p>
+    <img src="Box model.jpeg" alt="Box model diagram">
+    
+<div class="eg1">
+<p class="textofeg1"> Div with Box model properties of border 5px black solid , background color brown  , margin 10px , padding 15 px.<br></p>
+</div>
+<br>
+<hr>
+
+<div class="eg2">
+   <p class="textofeg1">Same div with no padding , margin and border. <br></p>
+   </div>
+<h3> Floats</h3>
+<p> Float property is used for formatting and posistioning of images. Float right means it is only the right side of the  screeen , float left means it is on the left side of the screen , even if you change screen size , it will move towards the right/left based on its assigned property</p>
+<p> In this example the images float to left and right , and they wrap around the text if you reduce screen size.</p>
+<div class="floatwrapper">
+   <p>
+   <img src="CSS.jpeg" alt="Refresh your page and check internet connection" id="float1" style="width:300px">
+   <img id="two" src="CSS.jpeg" alt="Refresh your page and check internet connection"style="width:300px">Text to understand float property
+</p>
+</div>
+ </body>
+ </html>
